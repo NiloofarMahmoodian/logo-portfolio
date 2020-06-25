@@ -1,0 +1,51 @@
+/* Global View aka Desktop View */
+
+body {
+  margin: 0;
+}
+
+.container {
+  min-height: 500px;
+  width: 1024px;
+  background-color: rgb(18, 191, 197);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  width: 30%;
+  margin-bottom: 40px;
+}
+
+.hide-d {
+  display: none;
+}
+
+.col img {
+  width: 100%;
+  height: auto;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .col {
+    width: 45%;
+  }
+
+  .hide-d {
+    display: block;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 500px) {
+  .col {
+    width: 100%;
+  }
+
+  .hide-m {
+    display: none;
+  }
+}
