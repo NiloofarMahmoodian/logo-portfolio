@@ -72,6 +72,10 @@ header {
   font-weight: 700;
 }
 
+.mob-wrapper {
+  display: none;
+}
+
 /* Tablet View */
 @media (max-width: 768px) {
   .col {
@@ -81,15 +85,16 @@ header {
   .hide-d {
     display: block;
   }
-  header {
-    display: block;
-    text-align: center;
-  }
+
   .header-container {
     position: relative;
   }
   .container {
     padding-top: 40px;
+  }
+
+  nav {
+    display: none;
   }
 
   nav a {
@@ -101,6 +106,26 @@ header {
   }
   .btn {
     margin-left: 0;
+  }
+
+  .mob-wrapper {
+    display: block;
+    padding-right: 30px;
+  }
+
+  .mob-nav {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+  }
+  .nav-btn {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(60, 60, 60);
+    padding: 15px 30px;
+    margin-left: -70px;
+    text-align: center;
   }
 }
 
